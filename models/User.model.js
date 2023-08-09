@@ -6,9 +6,8 @@ const userSchema = new Schema({
     type: String,
     unique: true
   },
-  password: String
+  password: String,
 });
 
-const User = model("User", userSchema);
 
-module.exports = User;
+module.exports = model('User', userSchema)
